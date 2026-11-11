@@ -1,8 +1,8 @@
 package jp.co.hara;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 
@@ -11,7 +11,7 @@ public class CalculatorTest {
 
         Calculator calculator = new Calculator();
 
-        assertEquals(5, calculator.add(2,3));
+        assertEquals(6, calculator.add(2,3));
 
     }
 
