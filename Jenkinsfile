@@ -5,7 +5,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'C:\\Tools\\apache-maven-3.10.0\\bin\\mvn.cmd clean package'
+                bat 'call C:\\Tools\\apache-maven-3.10.0\\bin\\mvn.cmd clean package'
+            }
+        }
+
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: 'target/*.jar'
             }
         }
 
