@@ -50,7 +50,17 @@ pipeline {
 
             steps {
 
-                bat 'docker build -t hello-jenkins .'
+                bat 'docker build -t hello-jenkins:v2 .'
+
+            }
+
+        }
+        
+        stage('Docker Run') {
+
+            steps {
+
+                bat 'docker run --rm hello-jenkins:v2'
 
             }
 
