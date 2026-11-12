@@ -9,7 +9,7 @@ pipeline {
             steps {
 
                 bat 'whoami'
-                bat 'where docker'
+                bat 'docker version'
 
             }
 
