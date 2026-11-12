@@ -2,15 +2,15 @@ pipeline {
 
     agent any
 
-	    stages {
-		
-		    steps {
-		
-		        bat 'where docker'
-		
-		    }
-		
-		}
+        stages {
+
+            steps {
+
+                bat 'where docker'
+
+            }
+
+        }
 
         stage('Test') {
 
