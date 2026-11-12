@@ -11,7 +11,6 @@ pipeline {
                 bat 'whoami'
                 bat 'docker context ls'
                 bat 'docker version'
-                bat 'set DOCKER'
 
             }
 
