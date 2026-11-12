@@ -4,13 +4,14 @@ pipeline {
 
     stages {
 
-        stage('Docker Check') {
+        stage('Docker Debug') {
 
             steps {
 
                 bat 'whoami'
                 bat 'docker context ls'
-                bat 'docker info'
+                bat 'docker version'
+                bat 'set DOCKER'
 
             }
 
