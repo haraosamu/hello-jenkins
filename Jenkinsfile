@@ -4,7 +4,7 @@ pipeline {
 
     stages {
 
-        stage {
+        stage('Docker Check') {
 
             steps {
 
