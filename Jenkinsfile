@@ -9,7 +9,8 @@ pipeline {
             steps {
 
                 bat 'whoami'
-                bat 'docker version'
+                bat 'docker context ls'
+                bat 'docker info'
 
             }
 
