@@ -8,6 +8,7 @@ pipeline {
 
             steps {
 
+                bat 'whoami'
                 bat 'where docker'
 
             }
